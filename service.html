@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            min-height: 100vh;
+            background-color: #1B1B1D;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 100%;
+            padding: 30px 10%;
+            background-color: #2a2a2c;
+        }
+        section.title{
+            max-width: 700px;
+            margin: 0px auto 45px;
+            text-align: center;
+        }
+        section.title h1{
+            position: relative;
+            font-size: 32px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 30px;
+            display: inline-block;
+        }
+        section.title h1::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            top: 120%;
+            left: 0px;
+            background-color: #aaabb0;
+        }
+        section.title h1::after{
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            top: calc(120% - 1px);
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #219bfe;
+        }
+        .title p{
+            font-size: 18px;
+        }
+        section.service_container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .service_container .service_box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-basis: 32%;
+            text-align: center;
+            padding: 20px 10px 30px;
+            background-color: #666363;
+            border: 1px solid #989797;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .service_box i{
+            font-size: 30px;
+            color: #e66262;
+            transition: 0.3s;
+        }
+        .service_box:hover i{
+            color: #219bfe;
+        }
+        .service_box h2{
+            padding: 15px 0px 10px;
+            color: #f7f7f7;
+            font-size: 20px;
+        }
+        .service_box p{
+            color: #ffffff;
+            line-height: 1.3;
+        }
+        @media(max-width: 1000px){
+            .service_container .service_box{
+                flex-basis: 48%;
+            }
+        }
+        @media(max-width: 600px){
+            .service_container .service_box{
+                flex-basis: 100%;
+            }
+        }
+        button {
+            padding: .75rem 1rem;
+            border-radius: 1.2rem;
+            border: none;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: rgb(86, 103, 111);
+        }
+        .footer {
+            color: white;
+            padding: 10px;
+            text-align: center;
+}
+    </style>
+    <title>Services Jessen Ramadeksa Allen</title>
+</head>
+<body>
+    <div class="container">
+        <section class="title">
+            <h1 style="color: white;">My Services</h1>
+            <p style="color: white;">Saya menyediakan beragam layanan terkait desain dan pengembangan web, termasuk desain web yang menarik, pengembangan front-end yang responsif, desain logo yang kreatif, serta desain aplikasi yang memukau. Selain itu, saya juga memiliki keahlian dalam menggunakan platform desain kolaboratif seperti Figma, yang memudahkan dalam proses kerja tim dan memastikan konsistensi desain. Dengan pengalaman dan dedikasi dalam menghasilkan solusi yang inovatif dan disesuaikan dengan kebutuhan Anda.</p>
+        </section>
+
+        <section class="service_container">
+            <div class="service_box">
+                <i class="fa-solid fa-palette"></i>
+                <h2 style="color: white;">Web Design</h2>
+                <p>Saya menggabungkan kreativitas dan keahlian teknis untuk menciptakan desain web yang menarik. Setiap elemen dipilih secara hati-hati untuk memperkuat identitas merek Anda dan memberikan pengalaman visual yang luar biasa bagi pengunjung.</p>
+            </div>
+            <div class="service_box">
+                <i class="fa-solid fa-code"></i>
+                <h2 style="color: white;">Web Development</h2>
+                <p>Saya menawarkan layanan pengembangan web yang inovatif, mencakup pembuatan situs web yang responsif dan fungsional. </p>
+            </div>
+            <div class="service_box">
+                <i class="fa-solid fa-camera-retro"></i>
+                <h2 style="color: white;">Front End</h2>
+                <p>Saya memastikan situs web saya memiliki tampilan yang menawan dan berfungsi baik di semua perangkat. Dengan fokus pada pengalaman pengguna yang responsif, saya memberikan interaksi yang mulus bagi pengunjung.</p>
+            </div>
+            <div class="service_box">
+                <i class="fa-solid fa-broom-ball"></i>
+                <h2 style="color: white;">Logo Design</h2>
+                <p>Logo saya mencuri perhatian dengan desain yang unik dan berkesan. Saya menggabungkan kreativitas dengan pemahaman mendalam tentang identitas merek Anda untuk menciptakan logo yang menceritakan kisah tentang bisnis Anda.</p>
+            </div>
+            <div class="service_box">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <h2 style="color: white;">App Design</h2>
+                <p>Aplikasi saya memukau dengan desain yang menawan dan antarmuka yang intuitif. Saya menghadirkan pengalaman pengguna yang luar biasa, memanjakan pengguna dengan fungsionalitas yang hebat.</p>
+            </div>
+            <div class="service_box">
+                <i class="fa-solid fa-rocket"></i>
+                <h2 style="color: white;">Figma</h2>
+                <p>Saya memfasilitasi kolaborasi tim yang efisien dengan menggunakan platform desain seperti Figma. Dengan kerja tim yang real-time, saya menghasilkan desain yang konsisten dan berkualitas tinggi.</p>
+            </div>
+        </section>
+        <div class="footer" style="font-size: large;" >
+            <button type="button" onclick="window.location.href='index.html'"><b>HOMEPAGE</b></button>
+          </div>
+    </div>
+</body>
+</html>
